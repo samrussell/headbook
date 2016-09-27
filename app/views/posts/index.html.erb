@@ -1,0 +1,6 @@
+<h1>Most recent posts</h1>
+<% @posts.each do |post| %>
+  <p><%= link_to post.title, post %></p>
+<% end %>
+
+<%= link_to "New post", new_post_path %>

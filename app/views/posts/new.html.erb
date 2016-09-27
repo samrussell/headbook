@@ -1,0 +1,17 @@
+<%= form_for @post do %>
+  <p>
+    <%= label :post, :title, "Post title"  %>
+    <%= text_field :post, :title %>
+  </p>
+  <p>
+    <%= label :post, :subtitle, "Subtitle"  %>
+    <%= text_field :post, :subtitle %>
+  </p>
+  <p>
+    <%= label :post, :body, "Write your post"  %>
+    <%= text_area :post, :body %>
+  </p>
+  <p>
+    <%= button_tag %>
+  </p>
+<% end %>
